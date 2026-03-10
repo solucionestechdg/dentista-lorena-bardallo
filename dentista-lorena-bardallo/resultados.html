@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Resultados - Clínica Dental Lorena Bardallo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resultados.css">
+    <link rel="icon" href="imagenes/favicon.png?v=5" type="image/png">
+</head>
+<body>
+    <div class="gallery-header">
+        <a href="tel:959308773" class="header-phone-btn">Pedir cita - 959308773</a>
+        <h1><img src="imagenes/resultados.png?v=3" alt="Resultados" class="header-icon">Galería de Resultados</h1>
+        <p>Mira las sonrisas transformadas por nuestro equipo</p>
+    </div>
+
+    <nav>
+        <a href="index.html"><img src="imagenes/inicio.png?v=3" alt="Inicio" class="nav-icon">Inicio</a>
+        <a href="resultados.html" class="active"><img src="imagenes/resultados.png?v=3" alt="Resultados" class="nav-icon">Resultados</a>
+        <a href="contacto.html"><img src="imagenes/contacto.png?v=3" alt="Contacto" class="nav-icon">Contacto</a>
+        <a href="faq.html"><img src="imagenes/preguntas.png?v=3" alt="FAQ" class="nav-icon">FAQ</a>
+    </nav>
+
+    <div class="container">
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterGallery(event, 'todos')">Todos</button>
+            <button class="filter-btn" onclick="filterGallery(event, 'blanqueamiento')">Blanqueamiento</button>
+            <button class="filter-btn" onclick="filterGallery(event, 'carillas')">Carillas</button>
+            <button class="filter-btn" onclick="filterGallery(event, 'brackets')">Brackets</button>
+            <button class="filter-btn" onclick="filterGallery(event, 'invisible')">Invisible</button>
+            <button class="filter-btn" onclick="filterGallery(event, 'implantes')">Implantes</button>
+            <button class="filter-btn" onclick="filterGallery(event, 'extracciones')">Extracciones</button>
+            <button class="filter-btn" onclick="filterGallery(event, 'ferulas')">Férulas</button>
+            <button class="filter-btn" onclick="filterGallery(event, 'protesis')">Prótesis</button>
+            <button class="filter-btn" onclick="filterGallery(event, 'periodontal')">Periodontal</button>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Resultado 1: Blanqueamiento -->
+            <div class="gallery-item" data-category="blanqueamiento">
+                <div class="gallery-item-images">
+                    <div class="gallery-item-image before">
+                        <img src="imagenes/blanqueamiento_antes.png" alt="Blanqueamiento dental antes" loading="lazy">
+                    </div>
+                    <div class="gallery-item-image after">
+                        <img src="imagenes/blanqueamiento_despues.png" alt="Blanqueamiento dental despues" loading="lazy">
+                    </div>
+                </div>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Blanqueamiento Dental</div>
+                    <div class="gallery-item-treatment">Tratamiento: Blanqueamiento Profesional</div>
+                    <div class="gallery-item-description">Transformación de dientes con coloración amarillenta a un blanco deslumbrante en una sesión.</div>
+                    <div class="gallery-item-footer">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resultado 2: Ortodoncia Invisible -->
+            <div class="gallery-item" data-category="invisible">
+                <div class="gallery-item-images">
+                    <div class="gallery-item-image before">
+                        <img src="imagenes/ortodoncia_invisible_antes.png" alt="Ortodoncia invisible antes" loading="lazy">
+                    </div>
+                    <div class="gallery-item-image after">
+                        <img src="imagenes/ortodoncia_invisible_despues.png" alt="Ortodoncia invisible despues" loading="lazy">
+                    </div>
+                </div>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Ortodoncia Invisible</div>
+                    <div class="gallery-item-treatment">Tratamiento: Ortodoncia Invisible</div>
+                    <div class="gallery-item-description">Corrección de maloclusión y alineación perfecta de la sonrisa utilizando alineadores transparentes.</div>
+                    <div class="gallery-item-footer">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resultado 3: Implantes Dentales -->
+            <div class="gallery-item" data-category="implantes">
+                <div class="gallery-item-images">
+                    <div class="gallery-item-image before">
+                        <img src="imagenes/implante_dental_antes.png" alt="Implante dental antes" loading="lazy">
+                    </div>
+                    <div class="gallery-item-image after">
+                        <img src="imagenes/implante_dental_despues.png" alt="Implante dental despues" loading="lazy">
+                    </div>
+                </div>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Implantes Dentales</div>
+                    <div class="gallery-item-treatment">Tratamiento: Implantes Dentales</div>
+                    <div class="gallery-item-description">Restauración de diente perdido con implante dental de última generación, indistinguible de los naturales.</div>
+                    <div class="gallery-item-footer">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resultado 4: Carillas Dentales -->
+            <div class="gallery-item" data-category="carillas">
+                <div class="gallery-item-images">
+                    <div class="gallery-item-image before">
+                        <img src="imagenes/carillas_dentales_antes.png" alt="Carillas dentales antes" loading="lazy">
+                    </div>
+                    <div class="gallery-item-image after">
+                        <img src="imagenes/carillas_dentales_despues.png" alt="Carillas dentales despues" loading="lazy">
+                    </div>
+                </div>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Carillas Dentales</div>
+                    <div class="gallery-item-treatment">Tratamiento: Carillas Dentales</div>
+                    <div class="gallery-item-description">Mejora de la forma y color de los dientes con carillas de cerámica de alta calidad.</div>
+                    <div class="gallery-item-footer">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resultado 5: Ortodoncia con Brackets -->
+            <div class="gallery-item" data-category="brackets">
+                <div class="gallery-item-images">
+                    <div class="gallery-item-image before">
+                        <img src="imagenes/ortodoncia_con_brackets_antes.png" alt="Ortodoncia con brackets antes" loading="lazy">
+                    </div>
+                    <div class="gallery-item-image after">
+                        <img src="imagenes/ortodoncia_con_brackets_despues.png" alt="Ortodoncia con brackets despues" loading="lazy">
+                    </div>
+                </div>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Ortodoncia con Brackets</div>
+                    <div class="gallery-item-treatment">Tratamiento: Ortodoncia con Brackets</div>
+                    <div class="gallery-item-description">Corrección de maloclusión en paciente joven con resultados excepcionales en 18 meses.</div>
+                    <div class="gallery-item-footer">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resultado 6: Extracciones -->
+            <div class="gallery-item" data-category="extracciones">
+                <div class="gallery-item-images">
+                    <div class="gallery-item-image before">
+                        <img src="imagenes/extracciones_antes.png" alt="Extracciones antes" loading="lazy">
+                    </div>
+                    <div class="gallery-item-image after">
+                        <img src="imagenes/extracciones_despues.png" alt="Extracciones despues" loading="lazy">
+                    </div>
+                </div>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Extracción Dental</div>
+                    <div class="gallery-item-treatment">Tratamiento: Extracción Segura</div>
+                    <div class="gallery-item-description">Extracción de diente problemático realizada con técnicas mínimamente invasivas para mayor comodidad.</div>
+                    <div class="gallery-item-footer">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resultado 7: Férulas de Descarga -->
+            <div class="gallery-item" data-category="ferulas">
+                <div class="gallery-item-images">
+                    <div class="gallery-item-image before">
+                        <img src="imagenes/ferulas_de_descargas_antes.png" alt="Ferula de descarga antes" loading="lazy">
+                    </div>
+                    <div class="gallery-item-image after">
+                        <img src="imagenes/ferulas_de_descargas_despues.png" alt="Ferula de descarga despues" loading="lazy">
+                    </div>
+                </div>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Férulas de Descarga</div>
+                    <div class="gallery-item-treatment">Tratamiento: Férulas de Descarga</div>
+                    <div class="gallery-item-description">Alivio del bruxismo y tensión mandibular con férula de descarga fabricada a medida.</div>
+                    <div class="gallery-item-footer">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resultado 8: Prótesis Dentales -->
+            <div class="gallery-item" data-category="protesis">
+                <div class="gallery-item-images">
+                    <div class="gallery-item-image before">
+                        <img src="imagenes/protesis_dentales_antes.png" alt="Protesis dental antes" loading="lazy">
+                    </div>
+                    <div class="gallery-item-image after">
+                        <img src="imagenes/protesis_dentales_despues.png" alt="Protesis dental despues" loading="lazy">
+                    </div>
+                </div>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Prótesis Dentales</div>
+                    <div class="gallery-item-treatment">Tratamiento: Prótesis Dentales</div>
+                    <div class="gallery-item-description">Restauración completa de la dentadura con prótesis de última generación, confortable y estética.</div>
+                    <div class="gallery-item-footer">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resultado 9: Tratamiento Periodontal y de Encías -->
+            <div class="gallery-item" data-category="periodontal">
+                <div class="gallery-item-images">
+                    <div class="gallery-item-image before">
+                        <img src="imagenes/tratamiento_periodontal_antes.png" alt="Tratamiento periodontal antes" loading="lazy">
+                    </div>
+                    <div class="gallery-item-image after">
+                        <img src="imagenes/tratamiento_periodontal_despues.png" alt="Tratamiento periodontal despues" loading="lazy">
+                    </div>
+                </div>
+                <div class="gallery-item-info">
+                    <div class="gallery-item-title">Tratamiento Periodontal y de Encías</div>
+                    <div class="gallery-item-treatment">Tratamiento: Periodontal y de Encías</div>
+                    <div class="gallery-item-description">Tratamiento profesional de enfermedades periodontales y recuperación de encías saludables.</div>
+                    <div class="gallery-item-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Clínica Dental Lorena Bardallo. Todos los derechos reservados.</p>
+        <p>Tu salud bucal es nuestra misión</p>
+        <div class="social-media">
+            <a class="social-link facebook" href="https://www.facebook.com/clinicadentallorenabardallo/" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M13.5 9H16V6h-2.5C11.6 6 10 7.6 10 9.5V12H8v3h2v7h3v-7h2.5l.5-3H13V9.5c0-.3.2-.5.5-.5Z" />
+                </svg>
+            </a>
+            <a class="social-link instagram" href="https://www.instagram.com/clidenlorenabardallo/" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm6-1.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z" />
+                    <path d="M12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="darkmode.js"></script>
+    <script src="whatsapp.js"></script>
+</body>
+</html>

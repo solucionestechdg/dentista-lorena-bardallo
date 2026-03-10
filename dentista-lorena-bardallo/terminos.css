@@ -1,0 +1,136 @@
+/* ========== PÁGINA DE TÉRMINOS ========== */
+.terminos-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.terminos-content h2 {
+    color: #0ba3d0;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.ultima-actualizacion {
+    text-align: center;
+    color: #999;
+    font-size: 0.95em;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.terminos-content h3 {
+    color: #0ba3d0;
+    font-size: 1.4em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e8f9fd;
+    padding-bottom: 10px;
+}
+
+.terminos-content p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.terminos-content ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.terminos-content li {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.terminos-content a {
+    color: #0ba3d0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.terminos-content a:hover {
+    text-decoration: underline;
+}
+
+.cta-section {
+    background: linear-gradient(135deg, #e8f9fd 0%, #d3f2f8 100%);
+    border-left: 5px solid #0ba3d0;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cta-section h3 {
+    color: #0ba3d0;
+    margin-top: 0;
+    border: none;
+    padding: 0;
+}
+
+.cta-section p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Dark Mode */
+body.dark-mode .terminos-content h2,
+body.dark-mode .terminos-content h3 {
+    color: #64b5f6;
+    border-bottom-color: #2a2a2a;
+}
+
+body.dark-mode .terminos-content p,
+body.dark-mode .terminos-content li {
+    color: #d0d0d0;
+}
+
+body.dark-mode .ultima-actualizacion {
+    color: #999;
+}
+
+body.dark-mode .terminos-content a {
+    color: #64b5f6;
+}
+
+body.dark-mode .cta-section {
+    background: linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%);
+    border-left-color: #64b5f6;
+}
+
+body.dark-mode .cta-section h3 {
+    color: #64b5f6;
+}
+
+body.dark-mode .cta-section p {
+    color: #d0d0d0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .terminos-content {
+        padding: 20px 15px;
+    }
+
+    .terminos-content h2 {
+        font-size: 1.8em;
+    }
+
+    .terminos-content h3 {
+        font-size: 1.2em;
+        margin-top: 25px;
+    }
+
+    .terminos-content p {
+        text-align: left;
+    }
+
+    .cta-section {
+        padding: 20px;
+    }
+}

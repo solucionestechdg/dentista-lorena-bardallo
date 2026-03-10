@@ -1,0 +1,69 @@
+// INSTRUCCIONES PARA CONFIGURAR EmailJS
+// ======================================
+
+// 1. Crear cuenta en EmailJS
+// ==========================
+// Ve a https://www.emailjs.com (es GRATUITO)
+// Regístrate con tu email
+
+// 2. Obtener las credenciales
+// ============================
+// a) Service ID:
+//    - Accede a: Dashboard > Email Services
+//    - Aquí verás tu Service ID (ejemplo: "service_abc123xyz")
+//
+// b) Template ID:
+//    - Accede a: Email Templates
+//    - Haz clic en "Create New Template"
+//    - Rellena como se muestra a continuación:
+//
+//    TEMPLATE NAME: DentistContact
+//    TO EMAIL: {{to_email}}
+//    SUBJECT: {{subject}}
+//    
+//    En la sección de Content (cuerpo del email):
+//    -----
+//    Nuevo mensaje de contacto
+//    
+//    Nombre: {{from_name}}
+//    Email: {{from_email}}
+//    Teléfono: {{phone}}
+//    Asunto: {{subject}}
+//    
+//    Mensaje:
+//    {{message}}
+//    
+//    Responder a: {{reply_to}}
+//    -----
+//
+//    Copia el Template ID (ejemplo: "template_abc123xyz")
+//
+// c) Public Key:
+//    - Accede a: Account > API Keys
+//    - Copia tu "Public Key" (ejemplo: "abc123xyz_public")
+
+// 3. Reemplazar en contacto.js
+// =============================
+// Abre CONTACTO.JS y busca estas líneas (al principio):
+//
+// const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';      // ← Cambia aquí
+// const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';    // ← Cambia aquí  
+// const EMAILJS_USER_ID = 'YOUR_PUBLIC_KEY';         // ← Cambia aquí
+//
+// Reemplaza YOUR_SERVICE_ID, YOUR_TEMPLATE_ID y YOUR_PUBLIC_KEY
+// con tus valores reales de EmailJS
+
+// 4. Email destinatario
+// =======================
+// Cambia 'info@dentista-lorena.com' a tu email real:
+//
+// const DENTISTA_EMAIL = 'tu-email@gmail.com';
+
+// ¡LISTO!
+// =======
+// Cuando alguien rellene el formulario, recibirás un email automáticamente
+// en tu bandeja de entrada
+
+// NOTA IMPORTANTE:
+// EmailJS permite 200 emails GRATIS al mes
+// Si necesitas más, puedes actualizar a un plan de pago

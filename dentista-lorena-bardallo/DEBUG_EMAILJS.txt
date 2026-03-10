@@ -1,0 +1,77 @@
+SOLUCIÓN PARA EL ERROR "Se queda en Enviando"
+===============================================
+
+Este error ocurre cuando EmailJS no puede enviar. Sigue estos pasos:
+
+1. VERIFICAR EN EmailJS - Email Services
+=====================================
+   - Ve a: https://dashboard.emailjs.com
+   - Accede a: UI > Email Services
+   - Aquí verás tu Service ID (service_gpg7exa)
+   - ¿Está conectado a un email real (Gmail, Outlook, etc.)?
+   - Si NO, necesitas conectar un email
+
+2. CONECTAR UN EMAIL (IMPORTANTE)
+=================================
+   - En Email Services, haz clic en tu service
+   - Haz clic en "Connect Provider"
+   - Elige: Gmail
+   - Sigue el asistente para conectar tu Gmail
+   - Espera a que aparezca "Connected" ✓
+
+3. VERIFICAR LA PLANTILLA
+=========================
+   - Ve a: Templates
+   - Busca: template_l28757g
+   - Haz clic en ella
+   - En "To Email" debe tener: {{to_email}}
+   - En "Subject" debe tener: {{subject}}
+   - En el cuerpo (Content) copia esto EXACTAMENTE:
+
+---COPIA ESTO EN EL CUERPO---
+Nuevo mensaje de contacto desde tu web
+=========================================
+
+Nombre: {{user_name}}
+Email: {{user_email}}
+Teléfono: {{user_phone}}
+Asunto: {{subject}}
+
+Mensaje:
+{{message}}
+
+Responder a: {{reply_to}}
+---FIN---
+
+4. VERIFICAR QUE TEMPLATE Y SERVICE ESTÉN VINCULADOS
+====================================================
+   - En la plantilla (template_l28757g)
+   - Arriba a la derecha debe decir: Service: service_gpg7exa
+   - Si NO, haz clic en "Edit" y vincula el service correcto
+
+5. PROBAR CON TEST
+==================
+   - En la plantilla, haz clic en "Send Test Email"
+   - Rellena los valores:
+     to_email: servidordanielguillermo@gmail.com
+     user_name: Test
+     user_email: test@test.com
+     user_phone: 123456789
+     subject: Prueba
+     message: Este es un test
+     reply_to: test@test.com
+   - Haz clic en "Send"
+   - ¿Llega el email? ✓ Si sí, el problema es el JavaScript
+
+6. SI AÚN NO FUNCIONA
+====================
+   - Abre la consola (F12) cuando envíes el formulario
+   - Copia TODO el error que aparece en rojo
+   - Envíamelo
+
+7. ALTERNATIVA: FUERZA EL REINICIO
+===================================
+   Si aún no funcion, prueba esto:
+   - Borra el caché del navegador (Ctrl+Shift+Suprimir)
+   - Recarga la página (Ctrl+F5)
+   - Intenta de nuevo
